@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9fb671f242.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/subhrajit-logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi,I'm <span class="auto-input"></span></h1>
+                <p>You can reach out to me if you need any help in making  <br>a website for you and your business.</p>
+                <a href="#contact">Contact Me</a>
+                <a href="images/Subhrajit.pdf" download class="button">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------about---------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.png"  >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Welcome to my Portfolio! I'm Subhrajit Subudhi, a skilled programmer proficient in C++, Python, JavaScript, HTML, and CSS. With a passion for coding and problem-solving, I strive to create efficient and elegant solutions to tackle real-world challenges and equipped with strong communication skills, I excel in collaborating with diverse teams. Let's connect and bring your ideas to life through innovative programming. <br> <br>
+                    </p>
+                    <div class="tab-titles">
+                        <p  class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p  class="tab-links" onclick="opentab('Certificate')">Certificates</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>HTML/CSS/Javscript</span><br>Frontend Development</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Version Control</span><br>GIT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Certificate">
+                        <ul>
+                            <li><span>Meta Frontend Development Course </span><br>on Coursera(2023)</li>
+                            <li><span>Python Training Course</span><br>on Intellipaat(2022)</li>
+                            <li><span>C Programming Course</span><br>on LIT(2021)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>10th</span><br>MBS Public School,(2018)</li>
+                            <li><span>12th</span><br>MBS Public School,(2020)</li>
+                            <li><span>B-tech</span><br>GITA Auttonomous College,(2020-2024)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------Projects--------------------------->
+    <div id="Projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="Project-list">
+                <div>
+                    <i class="fa-solid fa-code fa-beat"></i>
+                    <h2>Website Designing</h2><br>
+                    <ul>
+                        <li>College Website</li>
+                        <li>Build To-Do List</li>
+                        <li>Drop-Down Menu</li>
+                    </ul>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop fa-flip"></i>
+                    <h2>UI/UX Design</h2><br>
+                    <ul>
+                        <li>Mini Calendar</li>
+                        <li>Global Campus Website</li>
+                    </ul>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python fa-bounce"></i>
+                    <h2>Python Training</h2><br>
+                    <ul>
+                    <li>Hospital Management</li>
+                    <li>Web Scraping </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------------Portfolio---------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work01.png" >
+                <div class="layer">
+                    <h3>College Website</h3>
+                    <p>The college website serves as a digital gateway, providing students with comprehensive information, seamless navigation, and interactive features to facilitate their academic journey.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work02.png" >
+                <div>
+                    <div class="layer">
+                        <h3>Global Campus website</h3>
+                        <p>The global campus website connects students from around the world, fostering a diverse and inclusive online community, offering access to a wide range of courses, resources, and virtual collaboration platforms.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>  
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work03.png" >
+                <div>
+                    <div class="layer">
+                        <h3>Hospital Management</h3>
+                        <p>Python and Tkinter empower hospital management by providing a robust framework for developing user-friendly interfaces, automating administrative tasks, and streamlining data management.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn btn2">See more</a>
+    </div>
+</div>
+<!--------------------------contact------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left"> 
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>subhrajitsubudhi12345@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9337260879</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/subhra.sipun"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.instagram.com/_.subh_/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form method="POST" action=" " name="contactform" id="contactform">
+                    <input type="text"  class="form-control" name="Name" placeholder="Your Name" required>
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" class="form-control" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2023. Made with <i class="fa-solid fa-heart"></i> by Subhrajit Subudhi</p>
+    </div>
+</div>
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links")
+        var tabcontents=document.getElementsByClassName("tab-contents")
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed=new Typed(".auto-input",{
+            strings:["Subhrajit Subudhi","Frontend Developer","UI/UX designer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop:true
+        })
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxsqth6pRTJrxp6U4vvTGBbRBUmwqvKchZjeTD7mVQCRHABOQkQvKuAF49y_hgQFiQ63Q/exec'
+        const form = document.forms['contactform']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
